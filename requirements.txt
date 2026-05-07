@@ -1,0 +1,26 @@
+# G-Zero release pipeline
+# Tested with Python 3.11 on Linux/macOS.
+
+# ─── Tinker API ─────────────────────────────────────────────────────────
+tinker>=0.1.0
+tinker-cookbook>=0.1.0
+
+# ─── Core ───────────────────────────────────────────────────────────────
+torch>=2.0
+numpy>=1.24
+regex>=2023.0
+huggingface_hub>=0.20
+datasets>=2.14
+transformers>=4.40
+
+# ─── Phase 1 (BLEU diversity penalty) ───────────────────────────────────
+nltk>=3.8
+scikit-learn>=1.3
+
+# ─── IFEval (rule-based verifier registry from google-research) ─────────
+# If pip can't find the wheel, install from source:
+#   pip install git+https://github.com/google-research/google-research.git#subdirectory=instruction_following_eval
+instruction-following-eval
+
+# ─── Optional, used by some sampling utilities ──────────────────────────
+aiohttp>=3.9

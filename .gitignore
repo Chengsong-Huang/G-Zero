@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.eggs/
+*.egg-info/
+build/
+dist/
+
+# Run outputs
+runs/
+*.log
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Secrets
+.env
+*.key
+tinker_token*
