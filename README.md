@@ -291,20 +291,6 @@ paper-main numbers. Knobs that are *load-bearing*:
 
 ---
 
-## Limitations
-
-- We focus on **two** base models in the paper: Qwen3-8B-Base and
-  Llama-3.1-8B-Instruct. On Llama-3.1-8B-Base the Solver collapses; on
-  Qwen3-4B-Instruct the Challenger mode-collapses. These are documented
-  as limitations in §7.
-- **Round 1 captures most of the gain** on Qwen3-8B-Base. Multi-round is
-  supported but does not cleanly stack.
-- Hint quality is bounded by what the **base** model can articulate
-  about its own response distribution. Stronger base → tighter δ
-  distribution → more headroom.
-
----
-
 ## Acknowledgments
 
 This release runs end-to-end on
