@@ -302,3 +302,5 @@ GPT-4-Turbo reference outputs come from
 IFEval verifiers from
 [google-research/instruction_following_eval](https://github.com/google-research/google-research/tree/master/instruction_following_eval);
 AIME problems from `Maxwell-Jia/AIME_2024` and `yentinglin/aime_2025`.
+
+We gratefully acknowledge the Thinking Machines Lab Tinker Research Grant for supporting the experimental efforts of this work. This research was also supported in part by the NVIDIA Academic Grant Program and WashU Ignite Interdisciplinary Grants.
