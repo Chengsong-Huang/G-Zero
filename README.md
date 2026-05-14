@@ -1,5 +1,12 @@
 # G-Zero: Self-Play for Open-Ended Generation from Zero Data
 
+<p align="center">
+  <a href="https://arxiv.org/abs/2605.09959">
+    <img alt="arXiv" src="https://img.shields.io/badge/arXiv-2605.09959-b31b1b.svg"/></a>
+  <a href="LICENSE">
+    <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-blue.svg"/></a>
+</p>
+
 > Self-play preference optimization for open-ended generation, with **no
 > ground-truth answers, no LLM judge in training, and no majority vote**.
 > The training signal is the **hint-induced log-prob shift δ** — purely
@@ -288,6 +295,22 @@ paper-main numbers. Knobs that are *load-bearing*:
 | `solver_max_tokens`              | 8192    | Truncating responses below this loses real signal — bot50 ≠ short responses. |
 | `aime_temperature`               | 0.7     | mean@32 needs > 0 to actually sample different paths. |
 | `alpaca_judge_model`             | Qwen3-235B-A22B-Instruct-2507 | Llama-3.1-70B has severe position bias on this template. |
+
+---
+
+## Citation
+
+```bibtex
+@misc{huang2026gzeroselfplayopenendedgeneration,
+      title={G-Zero: Self-Play for Open-Ended Generation from Zero Data},
+      author={Chengsong Huang and Haolin Liu and Tong Zheng and Runpeng Dai and Langlin Huang and Jinyuan Li and Zongxia Li and Zhepei Wei and Yu Meng and Jiaxin Huang},
+      year={2026},
+      eprint={2605.09959},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2605.09959},
+}
+```
 
 ---
 
