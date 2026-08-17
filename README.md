@@ -1,3 +1,5 @@
+
+
 # G-Zero: Self-Play for Open-Ended Generation from Zero Data
 
 <p align="center">
@@ -294,7 +296,7 @@ paper-main numbers. Knobs that are *load-bearing*:
 | `dpo_lr`                         | 1e-5    | DPO has a narrow, model-dependent sweet spot. Always check Alpaca after DPO. |
 | `solver_max_tokens`              | 8192    | Truncating responses below this loses real signal — bot50 ≠ short responses. |
 | `aime_temperature`               | 0.7     | mean@32 needs > 0 to actually sample different paths. |
-| `alpaca_judge_model`             | Qwen3-235B-A22B-Instruct-2507 | Llama-3.1-70B has severe position bias on this template. |
+| `alpaca_judge_model`             | Qwen/Qwen3-235B-A22B-Instruct-2507 | Llama-3.1-70B has severe position bias on this template. |
 
 ---
 
